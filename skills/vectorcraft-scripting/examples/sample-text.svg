@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="240" viewBox="0 0 400 240">
+  <title>Sample Text</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <text transform="matrix(1 0 0 1 24 48)" x="0" y="0" xml:space="preserve" font-family="&apos;Source Sans 3&apos;, sans-serif" font-size="28" fill="#000000"><tspan x="0" y="0">Spring Sale 2025</tspan></text>
+    <text transform="matrix(1 0 0 1 24 96)" x="0" y="0" xml:space="preserve" font-family="&apos;Source Sans 3&apos;, sans-serif" font-size="16" fill="#000000"><tspan x="0" y="0">Offer ends 31 May 2025</tspan></text>
+    <text transform="matrix(1 0 0 1 24 140)" x="0" y="0" xml:space="preserve" font-family="&apos;Source Sans 3&apos;, sans-serif" font-size="14" fill="#000000"><tspan x="0" y="0">Prices valid in store only</tspan></text>
+    <text transform="matrix(1 0 0 1 24 180)" x="0" y="0" xml:space="preserve" font-family="&apos;Source Sans 3&apos;, sans-serif" font-size="11" fill="#000000"><tspan x="0" y="0">© 2025 Example Shop. Sale items 2025 range.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "vectorcraft",
+  "description": "VectorCraft vector illustration tools for Claude Code",
+  "owner": {
+    "name": "Ritvars Bikšis"
+  },
+  "plugins": [
+    {
+      "name": "vectorcraft-plugin",
+      "source": "./",
+      "description": "vectorcraft MCP server plus vectorcraft, vectorcraft-scripting, vectorcraft-draw and svg-audit skills",
+      "category": "design"
+    }
+  ]
+}

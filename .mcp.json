@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "vectorcraft": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/start-mcp.sh"],
+      "env": {
+        "VECTORCRAFT_PLUGIN_MODE": "${user_config.mode}",
+        "VECTORCRAFT_PLUGIN_CONTROL_PORT": "${user_config.control_port}",
+        "VECTORCRAFT_PLUGIN_CLI_PATH": "${user_config.cli_path}",
+        "VECTORCRAFT_PLUGIN_READ_ROOTS": "${user_config.read_roots}",
+        "VECTORCRAFT_PLUGIN_WRITE_ROOTS": "${user_config.write_roots}"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "vectorcraft-plugin",
+  "displayName": "VectorCraft",
+  "version": "0.1.0",
+  "description": "Draw, edit, automate and export vector art in VectorCraft from Claude: the vectorcraft MCP server (live app or headless), plus skills for the app, automation scripting (ported from Illustrator ExtendScript), diagrams and drawings, and SVG audits.",
+  "author": {
+    "name": "Ritvars Bikšis"
+  },
+  "repository": "https://github.com/ritvarsbiksis/vectorcraft-plugin",
+  "license": "MIT",
+  "keywords": [
+    "vectorcraft",
+    "vector",
+    "svg",
+    "illustration",
+    "mcp",
+    "diagrams",
+    "automation",
+    "svg-audit"
+  ],
+  "userConfig": {
+    "mode": {
+      "type": "string",
+      "title": "Connection mode",
+      "description": "auto: use a running VectorCraft (vectorcraft --control PORT) and fall back to headless. connect: the running app only. headless: an in-process engine, no app needed.",
+      "default": "auto",
+      "options": [
+        "auto",
+        "connect",
+        "headless"
+      ]
+    },
+    "control_port": {
+      "type": "number",
+      "title": "Control port",
+      "description": "Loopback port the VectorCraft app listens on when started with --control PORT.",
+      "default": 7979,
+      "min": 1,
+      "max": 65535
+    },
+    "cli_path": {
+      "type": "string",
+      "title": "vectorcraft-cli path",
+      "description": "Absolute path to vectorcraft-cli. Leave empty to search PATH and the usual install folders.",
+      "default": ""
+    },
+    "read_roots": {
+      "type": "string",
+      "multiple": true,
+      "title": "Read roots (optional)",
+      "description": "Existing folders the agent may read from. Setting any read or write root confines file access and forces headless mode.",
+      "default": []
+    },
+    "write_roots": {
+      "type": "string",
+      "multiple": true,
+      "title": "Write roots (optional)",
+      "description": "Existing folders the agent may save and export into. Setting any read or write root confines file access and forces headless mode.",
+      "default": []
+    }
+  }
+}

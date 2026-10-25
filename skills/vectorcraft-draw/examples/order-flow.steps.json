@@ -1,0 +1,621 @@
+[
+ {
+  "id": "artboard.setProps",
+  "params": {
+   "index": 0,
+   "x": 0.0,
+   "y": 0.0,
+   "width": 430.0,
+   "height": 492.0
+  }
+ },
+ {
+  "id": "file.info",
+  "params": {
+   "title": "Order handling",
+   "description": "Flowchart: Order received, Item in stock?, Pick, pack and ship, Reorder from supplier, Done"
+  }
+ },
+ {
+  "id": "layer.setProps",
+  "params": {
+   "name": "Connectors"
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Connector",
+   "color": "#334155",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Terminal Fill",
+   "color": "#dcfce7",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Terminal Line",
+   "color": "#166534",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Process Fill",
+   "color": "#e0f2fe",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Process Line",
+   "color": "#075985",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Decision Fill",
+   "color": "#fef3c7",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Decision Line",
+   "color": "#92400e",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Io Fill",
+   "color": "#ede9fe",
+   "global": true
+  }
+ },
+ {
+  "id": "swatch.new",
+  "params": {
+   "name": "Flow Io Line",
+   "color": "#5b21b6",
+   "global": true
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M204.0 116.0 L204.0 172.0"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$12.id",
+   "name": "edge:start->check"
+  }
+ },
+ {
+  "id": "paint.setFill",
+  "params": {
+   "ids": [
+    "$12.id"
+   ],
+   "none": true
+  }
+ },
+ {
+  "id": "paint.setStroke",
+  "params": {
+   "ids": [
+    "$12.id"
+   ],
+   "swatch": "$3.name"
+  }
+ },
+ {
+  "id": "stroke.set",
+  "params": {
+   "ids": [
+    "$12.id"
+   ],
+   "weight": 1.25,
+   "join": "round",
+   "endArrow": "Triangle",
+   "arrowAlign": "tip"
+  }
+ },
+ {
+  "id": "graphicStyle.new",
+  "params": {
+   "id": "$12.id",
+   "name": "Flow Connector"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M126.0 210.0 L106.0 210.0 L106.0 304.0"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$18.id",
+   "name": "edge:check->ship"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M282.0 210.0 L302.0 210.0 L302.0 304.0"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$20.id",
+   "name": "edge:check->reorder"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M363.6 328.0 L394.0 328.0 L394.0 144.0 L204.0 144.0 L204.0 172.0"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$22.id",
+   "name": "edge:reorder->check"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M106.0 352.0 L106.0 380.0 L204.0 380.0 L204.0 408.0"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$24.id",
+   "name": "edge:ship->done"
+  }
+ },
+ {
+  "id": "graphicStyle.apply",
+  "params": {
+   "name": "$17.name",
+   "ids": [
+    "$18.id",
+    "$20.id",
+    "$22.id",
+    "$24.id"
+   ]
+  }
+ },
+ {
+  "id": "layer.new",
+  "params": {
+   "name": "Nodes"
+  }
+ },
+ {
+  "id": "shape.rectangle",
+  "params": {
+   "x": 134.0,
+   "y": 68.0,
+   "width": 140,
+   "height": 48,
+   "radius": 24.0
+  }
+ },
+ {
+  "id": "paint.setFill",
+  "params": {
+   "ids": [
+    "$28.id"
+   ],
+   "swatch": "$4.name"
+  }
+ },
+ {
+  "id": "paint.setStroke",
+  "params": {
+   "ids": [
+    "$28.id"
+   ],
+   "swatch": "$5.name"
+  }
+ },
+ {
+  "id": "stroke.set",
+  "params": {
+   "ids": [
+    "$28.id"
+   ],
+   "weight": 1.25,
+   "join": "round"
+  }
+ },
+ {
+  "id": "graphicStyle.new",
+  "params": {
+   "id": "$28.id",
+   "name": "Flow Terminal"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 204.0,
+   "y": 95.67,
+   "text": "Order received",
+   "size": 11,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.group",
+  "params": {
+   "ids": [
+    "$28.id",
+    "$33.id"
+   ]
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$34.id",
+   "name": "node:start"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M204.0 172.0 L282.0 210.0 L204.0 248.0 L126.0 210.0 Z"
+  }
+ },
+ {
+  "id": "paint.setFill",
+  "params": {
+   "ids": [
+    "$36.id"
+   ],
+   "swatch": "$8.name"
+  }
+ },
+ {
+  "id": "paint.setStroke",
+  "params": {
+   "ids": [
+    "$36.id"
+   ],
+   "swatch": "$9.name"
+  }
+ },
+ {
+  "id": "stroke.set",
+  "params": {
+   "ids": [
+    "$36.id"
+   ],
+   "weight": 1.25,
+   "join": "round"
+  }
+ },
+ {
+  "id": "graphicStyle.new",
+  "params": {
+   "id": "$36.id",
+   "name": "Flow Decision"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 204.0,
+   "y": 213.67,
+   "text": "Item in stock?",
+   "size": 11,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.group",
+  "params": {
+   "ids": [
+    "$36.id",
+    "$41.id"
+   ]
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$42.id",
+   "name": "node:check"
+  }
+ },
+ {
+  "id": "shape.rectangle",
+  "params": {
+   "x": 36.0,
+   "y": 304.0,
+   "width": 140,
+   "height": 48,
+   "radius": 6
+  }
+ },
+ {
+  "id": "paint.setFill",
+  "params": {
+   "ids": [
+    "$44.id"
+   ],
+   "swatch": "$6.name"
+  }
+ },
+ {
+  "id": "paint.setStroke",
+  "params": {
+   "ids": [
+    "$44.id"
+   ],
+   "swatch": "$7.name"
+  }
+ },
+ {
+  "id": "stroke.set",
+  "params": {
+   "ids": [
+    "$44.id"
+   ],
+   "weight": 1.25,
+   "join": "round"
+  }
+ },
+ {
+  "id": "graphicStyle.new",
+  "params": {
+   "id": "$44.id",
+   "name": "Flow Process"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 106.0,
+   "y": 331.67,
+   "text": "Pick, pack and ship",
+   "size": 11,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.group",
+  "params": {
+   "ids": [
+    "$44.id",
+    "$49.id"
+   ]
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$50.id",
+   "name": "node:ship"
+  }
+ },
+ {
+  "id": "path.create",
+  "params": {
+   "d": "M248.8 304.0 L372.0 304.0 L355.2 352.0 L232.0 352.0 Z"
+  }
+ },
+ {
+  "id": "paint.setFill",
+  "params": {
+   "ids": [
+    "$52.id"
+   ],
+   "swatch": "$10.name"
+  }
+ },
+ {
+  "id": "paint.setStroke",
+  "params": {
+   "ids": [
+    "$52.id"
+   ],
+   "swatch": "$11.name"
+  }
+ },
+ {
+  "id": "stroke.set",
+  "params": {
+   "ids": [
+    "$52.id"
+   ],
+   "weight": 1.25,
+   "join": "round"
+  }
+ },
+ {
+  "id": "graphicStyle.new",
+  "params": {
+   "id": "$52.id",
+   "name": "Flow Io"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 302.0,
+   "y": 325.07,
+   "text": "Reorder from\nsupplier",
+   "size": 11,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.group",
+  "params": {
+   "ids": [
+    "$52.id",
+    "$57.id"
+   ]
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$58.id",
+   "name": "node:reorder"
+  }
+ },
+ {
+  "id": "shape.rectangle",
+  "params": {
+   "x": 134.0,
+   "y": 408.0,
+   "width": 140,
+   "height": 48,
+   "radius": 24.0
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 204.0,
+   "y": 435.67,
+   "text": "Done",
+   "size": 11,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.group",
+  "params": {
+   "ids": [
+    "$60.id",
+    "$61.id"
+   ]
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$62.id",
+   "name": "node:done"
+  }
+ },
+ {
+  "id": "graphicStyle.apply",
+  "params": {
+   "name": "$32.name",
+   "ids": [
+    "$60.id"
+   ]
+  }
+ },
+ {
+  "id": "layer.new",
+  "params": {
+   "name": "Labels"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 121.0,
+   "y": 205.0,
+   "text": "yes",
+   "size": 9,
+   "justify": "right",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$66.id",
+   "name": "label:check->ship"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 287.0,
+   "y": 205.0,
+   "text": "no",
+   "size": 9,
+   "justify": "left",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$68.id",
+   "name": "label:check->reorder"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 299.0,
+   "y": 156.0,
+   "text": "restocked",
+   "size": 9,
+   "justify": "center",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$70.id",
+   "name": "label:reorder->check"
+  }
+ },
+ {
+  "id": "text.create",
+  "params": {
+   "x": 36.0,
+   "y": 52.0,
+   "text": "Order handling",
+   "size": 16,
+   "justify": "left",
+   "color": "#0f172a"
+  }
+ },
+ {
+  "id": "object.setProps",
+  "params": {
+   "id": "$72.id",
+   "name": "title"
+  }
+ }
+]

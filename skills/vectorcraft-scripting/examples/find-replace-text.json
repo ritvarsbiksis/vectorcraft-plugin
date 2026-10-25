@@ -1,0 +1,5 @@
+[
+ {"command": "document.find", "params": {"kind": "Type", "text": "2025", "limit": 0}},
+ {"command": "edit.findReplace", "params": {"find": "2025", "replace": "2026", "matchCase": true}},
+ {"command": "document.find", "params": {"kind": "Type", "text": "2025"}}
+]

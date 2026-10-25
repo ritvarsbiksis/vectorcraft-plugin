@@ -1,0 +1,18 @@
+{
+  "title": "Order handling",
+  "direction": "TB",
+  "nodes": [
+    {"id": "start",   "label": "Order received",          "shape": "terminal"},
+    {"id": "check",   "label": "Item in stock?",          "shape": "decision"},
+    {"id": "ship",    "label": "Pick, pack and ship",     "shape": "process"},
+    {"id": "reorder", "label": "Reorder from supplier",   "shape": "io"},
+    {"id": "done",    "label": "Done",                    "shape": "terminal"}
+  ],
+  "edges": [
+    {"from": "start",   "to": "check"},
+    {"from": "check",   "to": "ship",    "label": "yes"},
+    {"from": "check",   "to": "reorder", "label": "no"},
+    {"from": "reorder", "to": "check",   "label": "restocked"},
+    {"from": "ship",    "to": "done"}
+  ]
+}
